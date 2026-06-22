@@ -21,10 +21,8 @@ It covers two task families:
 This bench backs the article *« La quantification 4-bit coûte-t-elle de la qualité ? »*
 / *"Does 4-bit quantization cost quality?"*
 
-- 🇫🇷 [lien]
-- 🇬🇧 [link]
-
-*(placeholders to fill once the article is online)*
+- 🇫🇷 https://www.haruni.net/fr/blog/nvfp4-quality-benchmark
+- 🇬🇧 https://www.haruni.net/en/blog/nvfp4-quality-benchmark
 
 ## Install
 

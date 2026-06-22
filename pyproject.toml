@@ -14,7 +14,7 @@ data = ["datasets>=2.0", "requests>=2.28"]
 
 [project.urls]
 Homepage = "https://www.haruni.net"
-# Article = "https://www.haruni.net/fr/blog/<slug-de-l-article-qualite>"  # à compléter après publication
+Article = "https://www.haruni.net/fr/blog/nvfp4-quality-benchmark"
 
 [tool.uv]
 package = false
