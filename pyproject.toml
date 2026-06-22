@@ -1,0 +1,20 @@
+[project]
+name = "llm-quant-ab"
+version = "0.1.0"
+description = "Blind A/B quality evaluation for quantized LLMs: gold scoring + two-sided LLM judge."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sébastien Burel" }]
+keywords = ["llm", "quantization", "evaluation", "benchmark", "vllm", "nvfp4"]
+dependencies = ["openai>=1.0"]
+
+[project.optional-dependencies]
+data = ["datasets>=2.0", "requests>=2.28"]
+
+[project.urls]
+Homepage = "https://www.haruni.net"
+# Article = "https://www.haruni.net/fr/blog/<slug-de-l-article-qualite>"  # à compléter après publication
+
+[tool.uv]
+package = false

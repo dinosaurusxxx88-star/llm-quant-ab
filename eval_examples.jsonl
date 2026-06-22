@@ -1,0 +1,13 @@
+# Eval set for ab_eval.py — one JSON object per line. Lines starting with # are ignored.
+# Replace the "input" fields with REAL ~1000-word texts representative of your use case.
+# Task types: "extraction" (gold = JSON list), "classification" (gold = label),
+#             "qa" (gold = reference answer string), "judge" (no gold; pairwise LLM judge).
+#
+# --- extraction: gold is the set of expected items; ask the model to emit a JSON list ---
+{"id": "extr-01", "type": "extraction", "system": "Tu es un assistant d'extraction. Réponds UNIQUEMENT par un tableau JSON de chaînes, sans aucun texte autour.", "input": "Extrais toutes les organisations citées dans le texte.\n\nTexte : La société Haruni SAS, basée à Rennes, collabore avec NVIDIA et Mistral AI sur des déploiements d'inférence locale. Le projet associe également le CNRS et l'INRIA pour le volet recherche.", "gold": ["haruni sas", "nvidia", "mistral ai", "cnrs", "inria"]}
+# --- classification: gold is a single normalized label ---
+{"id": "clf-01", "type": "classification", "system": "Classe le sentiment global du texte. Réponds par un seul mot : positif, négatif ou neutre.", "input": "Texte : Le déploiement a pris trois jours de plus que prévu et plusieurs fonctionnalités promises manquent encore à l'appel.", "gold": "négatif"}
+# --- qa: gold is a short reference answer, scored by token-level F1 ---
+{"id": "qa-01", "type": "qa", "system": "Réponds à la question de façon factuelle et concise, en t'appuyant uniquement sur le texte.", "input": "Question : Combien de mémoire unifiée possède le DGX Spark décrit ?\n\nTexte : Le DGX Spark testé embarque un superchip GB10 Grace Blackwell avec 128 Go de mémoire LPDDR5x unifiée, sous Ubuntu 24.04 ARM64.", "gold": "128 Go de mémoire unifiée"}
+# --- judge: open-ended analysis, no gold; replace input with a real ~1000-word text ---
+{"id": "judge-01", "type": "judge", "system": "Tu es un analyste. Réponds de façon concise et structurée.", "input": "Résume en trois points les principaux risques opérationnels décrits dans le texte, puis propose une mitigation pour chacun.\n\nTexte : <colle ici un texte d'environ 1000 mots représentatif de ton cas d'usage>"}

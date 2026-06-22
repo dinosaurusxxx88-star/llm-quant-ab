@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# uv
+.uv/
+
+# Artefacts générés (ne pas committer)
+evalset.jsonl
+results*.json
+results*.csv
+smoke.jsonl
+
+# Secrets — JAMAIS committer
+.env
+.env.*
+*.key
+
+# OS / éditeurs
+.DS_Store
+.idea/
+.vscode/
