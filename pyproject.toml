@@ -184,8 +184,8 @@ runSettings ": {
       }, {
         "text": "Data: { fileUri: uploadedFile.uri, mimeType: \"application/pdf\" } }] }],\n    ttl: \""
       }, {
-        "text": "3600s\" // Time to live\n  }\n});\n```\n\n### 2. Key Changes"
+        " text ": " 3600s\ " // Time to live\n  }\n});\n```\n\n### 2. Key Changes"
       }, {
-        "text": " to Note (June 2026)\n*   **Gemini 3.5 Flash:** This model is now"
+        " text ": " to Note (June 2026)\n*   **Gemini 3.5 Flash:** This model is now"
       }, {
-        "text": " t
+        " text ": " t
