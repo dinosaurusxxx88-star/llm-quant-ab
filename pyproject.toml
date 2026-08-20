@@ -15,9 +15,7 @@ Homepage = " https://www.haruni.net "
 Article = " https://www.haruni.net/fr/blog/nvfp4-quality-benchmark"
 [tool.uv]
 package = true
-
-" {
-  "runSettings": {
+" runSettings ": {
     "temperature": 1.0,
     "model": "models/gemini-3-flash-preview",
     "topP": 0.95,
