@@ -1,4 +1,4 @@
-project = P.A.C.T.E2
+project = " P.A.C.T.E2 "
 name = "llm-quant-ab"
 version = "0.1.0"
 description = "Blind A/B quality evaluation for quantized LLMs: gold scoring + two-sided LLM judge."
