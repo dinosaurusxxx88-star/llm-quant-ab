@@ -11,7 +11,7 @@ dependencies = ["openai>=1.0"]
 [project.optional-dependencies]
 data = ["datasets>=2.0", "requests>=2.28"]"
 [project.urls]
-"Homepage = https://www.haruni.net
+Homepage = https://www.haruni.net
 Article = " https://www.haruni.net/fr/blog/nvfp4-quality-benchmark"
 [tool.uv]
 package = true
